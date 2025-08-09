@@ -4,7 +4,7 @@ import Home from './Home.jsx';
 import Dashboard from './Dashboard.jsx';
 import Generator from './Generator.jsx';
 import VideoClipper from './VideoClipper.jsx';
-import AdvancedVideoGenerator from './AdvancedVideoGenerator.jsx';
+import AdvancedVideoGenerator from './src/AdvancedVideoGenerator.jsx';
 import Library from './Library.jsx';
 import ProfileSettings from './ProfileSettings.jsx';
 import SocialConnector from './SocialConnector.jsx';

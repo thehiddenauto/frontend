@@ -8,12 +8,12 @@ export default defineConfig({
     host: true,
     proxy: {
       '/api': {
-        target: 'http://localhost:3000',
+        target: 'https://backend-9g44.onrender.com',
         changeOrigin: true,
-        secure: false
+        secure: true
       },
       '/socket.io': {
-        target: 'http://localhost:3000',
+        target: 'https://backend-9g44.onrender.com',
         changeOrigin: true,
         ws: true
       }
