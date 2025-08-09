@@ -1,8 +1,0 @@
-{
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
-  ],
-  "env": {
-    "VITE_API_URL": "https://api.influencore.co"
-  }
-} 

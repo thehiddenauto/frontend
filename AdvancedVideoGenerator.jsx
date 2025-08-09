@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { mockApi } from './api/mockApi.js';
 
 export default function AdvancedVideoGenerator() {
   const [prompt, setPrompt] = useState('');
@@ -23,9 +24,10 @@ export default function AdvancedVideoGenerator() {
 
   const fetchModels = async () => {
     try {
-      const response = await axios.get('/api/video-models');
-      setModels(response.data.models);
-      setCapabilities(response.data.capabilities);
+      // Use mock API for now - replace with real API later
+      const response = mockApi.getVideoModels();
+      setModels(response.models);
+      setCapabilities(response.capabilities);
     } catch (error) {
       console.error('Failed to fetch models:', error);
     }
@@ -59,8 +61,9 @@ export default function AdvancedVideoGenerator() {
           endpoint = '/api/generate-veo3-video';
       }
 
-      const response = await axios.post(endpoint, requestData);
-      setGeneratedVideo(response.data);
+      // Use mock API for now - replace with real API later
+      const response = await mockApi.generateVideo(endpoint, requestData);
+      setGeneratedVideo(response);
     } catch (error) {
       console.error('Video generation failed:', error);
       alert('Video generation failed. Please try again.');
