@@ -1,17 +1,17 @@
 import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
-import Home from './pages/Home.jsx';
-import Dashboard from './pages/Dashboard.jsx';
-import Generator from './pages/Generator.jsx';
-import VideoClipper from './pages/VideoClipper.jsx';
-import AdvancedVideoGenerator from './pages/AdvancedVideoGenerator.jsx';
-import Library from './pages/Library.jsx';
-import ProfileSettings from './pages/ProfileSettings.jsx';
-import SocialConnector from './pages/SocialConnector.jsx';
-import Pricing from './pages/Pricing.jsx';
-import Login from './pages/Login.jsx';
-import Signup from './pages/Signup.jsx';
-import Billing from './pages/Billing.jsx';
+import Home from './Home.jsx';
+import Dashboard from './Dashboard.jsx';
+import Generator from './Generator.jsx';
+import VideoClipper from './VideoClipper.jsx';
+import AdvancedVideoGenerator from './AdvancedVideoGenerator.jsx';
+import Library from './Library.jsx';
+import ProfileSettings from './ProfileSettings.jsx';
+import SocialConnector from './SocialConnector.jsx';
+import Pricing from './Pricing.jsx';
+import Login from './Login.jsx';
+import Signup from './Signup.jsx';
+import Billing from './Billing.jsx';
 
 function App() {
   return (
